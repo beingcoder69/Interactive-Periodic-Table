@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Periodic Table</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Interactive Periodic Table</h1>
+
+    <!-- Periodic Table Container -->
+    <div class="table" id="table">
+        <!-- Elements will be added dynamically -->
+    </div>
+
+    <!-- Modal for Element Details -->
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            
+            <h2 id="elementName">Element Name</h2>
+            <p id="elementDetails"></p>
+            <button onclick="closeModal()">Close</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

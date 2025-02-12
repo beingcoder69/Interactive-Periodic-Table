@@ -1,0 +1,96 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 2rem;
+    margin: 20px 0;
+    color: #333;
+}
+
+/* Periodic table grid */
+.table {
+    display: grid;
+    grid-template-columns: repeat(18, 1fr);
+    gap: 10px;
+    padding: 20px;
+    justify-content: center;
+}
+
+/* Element styling */
+.element {
+    width: 60px;
+    height: 60px;
+    color: #000;
+    font-weight: bold;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+/* Category-based colors */
+.non-metal { background-color: #ffcccb; } /* Light red */
+.noble-gas { background-color: #add8e6; } /* Light blue */
+.alkali-metal { background-color: red; } /* Light orange */
+.alkaline-earth-metal { background-color: #ffebcd; } /* Light beige */
+.metalloid { background-color: #d3d3d3; } /* Gray */
+.halogen { background-color: #f5deb3; } /* Wheat */
+.transition-metal { background-color: #d8bfd8; } /* Light purple */
+.post-transition-metal { background-color: #c0c0c0; } /* Silver */
+
+/* Hover effect */
+.element:hover {
+    transform: scale(1.1);
+    background-color: #e0f7fa;
+}
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    text-align: left;
+}
+
+button {
+    margin-top: 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
